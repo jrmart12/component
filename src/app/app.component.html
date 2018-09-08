@@ -1,8 +1,25 @@
-<mat-toolbar class="toolbar" color="primary">
-  <mat-toolbar-row>
-    <span>Third Line</span>
-    <span class="example-spacer"></span>
-    <mat-icon class="example-icon">favorite</mat-icon>
-    <mat-icon class="example-icon">delete</mat-icon>
-  </mat-toolbar-row>
-</mat-toolbar>
+
+<mat-form-field class="filter">
+  <mat-select placeholder="Filtros">
+    <mat-option *ngFor="let filter of filters" [value]="filter.value">
+      {{filter.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+
+<section class="search">
+  <input  type="search" id="sampleSearchInput" placeholder="Busqueda"><i class="material-icons">search</i>
+</section>
+
+<button mat-button class="acciones" [matMenuTriggerFor]="menu">Acciones</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Eliminar</button>
+  <button mat-menu-item>Esconder</button>
+  <button mat-menu-item>Volver Visible</button>
+</mat-menu>
+
+<div class="button-row" class="button">
+  <button mat-stroked-button>+Agregar</button>
+</div>
+

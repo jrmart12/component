@@ -1,11 +1,29 @@
-.example-icon {
-    padding: 0 14px;
-  }
-  
-  .example-spacer {
-    flex: 1 1 auto;
-  }
-.toolbar{
-    position: fixed;
-    top: 20;
+.material-icons{
+  position: absolute;
+  top:0px;
+}
+input[type="search"] {
+  padding-right:55px;
+}
+.search {
+  position:absolute;
+  width:30%;
+  margin-left:27%; 
+  top:70px;
+
+}
+.acciones{
+  position:absolute;
+  margin-left:44%; 
+  top:60px;
+}
+.filter{
+  position:absolute;
+  margin-left:10%; 
+  top:45px;
+}
+.button{
+  position:absolute;
+  margin-left:53%; 
+  top:60px;
 }

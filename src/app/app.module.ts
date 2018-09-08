@@ -19,4 +19,6 @@ import { MaterialModule } from './material';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+}
